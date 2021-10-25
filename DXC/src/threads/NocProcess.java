@@ -6,7 +6,8 @@ public class NocProcess {
 		
 				FeeThread feeThread = new FeeThread();
 				feeThread.start();
-				
+				OfficeBoy ramu = new OfficeBoy();
+				ramu.start();
 				
 			}
 
