@@ -3,12 +3,11 @@ package threads;
 public class NocProcess {
 	public static void main(String[] args) {
 		//oldSequentialWay();
-		
-				FeeThread feeThread = new FeeThread();
-				feeThread.start();
-				OfficeBoy ramu = new OfficeBoy();
-				ramu.start();
-				
+
+		FeeThread feeThread = new FeeThread();
+		feeThread.start();
+		OfficeBoy ramu = new OfficeBoy("shamu-the office boy");
+		ramu.start();
 			}
 
 			private static void oldSequentialWay() {
